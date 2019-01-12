@@ -8,57 +8,66 @@ body{
 nav{
     width: 100%;
     background-color: white;
-    z-index: 5;
-    display: flex;
+    z-index: 11;
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
     position: fixed;
     left: 0;
     top: 0;
-    justify-content: space-between;
-    /*flex-direction: row;*/
-    max-height: 20vh;
+    height: 17vh!important;
+    min-height: 80px;
+    font-size: 14pt!important;
 }
 
-.flexItem1{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    width: 40vw;
-    margin: 0 1vh;
+nav > *{
+    align-self: center;
+    justify-self: center;
+    z-index: 11;
+    /*margin-top: 1vh;*/
 }
 
 .logo{
     width: 50px;
     height: 50px;
+    grid-row: 1;
+    grid-column: 1;
 }
 
 .mainHref{
     border-left: 2px solid black;
-    padding-left: 5px;
     max-width: 25vw;
     display: block;
+    grid-row: 1;
+    grid-column: 2/6;
 }
 
 a{
     text-decoration: none;
     display: block;
-    margin: auto;
     color: black;
+    grid-row: 1;
+    grid-column: 7;
+}
+
+.hoverBtn{
+
 }
 
 #searchField{
     background-color: gray;
 }
 
-
 .menu{
+    grid-row: 1;
+    grid-column: 8;
     max-width: 25vw;
     display: flex;
     justify-content: center;
-    font-size: inherit;
     flex-direction: column;
+    position: relative;
 }
 
-.menu ul{
+ul{
     display: none;
 }
 
@@ -72,10 +81,11 @@ li:hover{
 }
 
 .menu:hover ul{
-    display: block;
+    display: block!important;
     position: absolute;
-    top: 10vh;
+    top: 5vh;
     padding-left: 0;
+    width: 40vw;
 }
 
 #searchBtn, button{
@@ -90,15 +100,18 @@ li:hover{
 }
 
 .bottomMenu{
-    z-index: 20;
+    /*z-index: 20;*/
     background-color: white;
     border-radius: 5px;
 }
 
 form{
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    grid-row: 1;
+    grid-column: 16/20;
+}
+
+form > input{
+    /*font-size: 14pt;*/
 }
 
 li{
@@ -111,7 +124,7 @@ li:hover{
 
 main{
     position: absolute;
-    top: 20vh;
+    top: 15vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1vh;
