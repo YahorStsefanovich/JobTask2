@@ -165,3 +165,13 @@ header > div > img{
     align-self: center;
     justify-self: center;
 }
+
+.msgHref{
+    text-decoration: none;
+    color: black;
+    cursor: pointer!important;
+}
+
+.msgHref:hover{
+    text-decoration: underline;
+}
