@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="../css/main.css">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-    <!--<script src="../js/main.js"></script>-->
-    <script src="../js/menu.js"></script>
     <script src="../js/createMessages.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+
 
 
 </head>
@@ -24,12 +25,12 @@
                 <li><a href="#">Contact</a></li>
             </ul>
 
-            <img src="../resources/images/menu-512.png" alt="navicon">
+            <img id="navicon" src="../resources/images/menu-512.png" alt="navicon">
 
         </div>
         <div class="title">Telegram</div>
         <div class="search">
-            <img src="../resources/images/search.png" alt="search">
+            <img id="search" src="../resources/images/search.png" alt="search">
             <form class="hideSearch" action="">
                 <input type="text" placeholder="Input text">
                 <input type="submit" value="Find">
@@ -39,6 +40,9 @@
 
     </header>
     <main class="container" id="mainContainer">
+        <div id="themes">
+
+        </div>
         <!--<div class="row">-->
             <!--<a class="msgHref" href=""><img class="avatar" src="../resources/images/Ava.jpg" alt=""></a>-->
             <!--<div class="itemMsg">-->
@@ -48,36 +52,39 @@
             <!--<div class="time">15:47 PM</div>-->
         <!--</div>-->
 
-        <div class="message">
-            <div class="leftMessage">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantiu
-                    m adipisci dolore, dolores enim error impedit in, iusto magni mollitia odio officiis omnis par
-                    iatur porro quo repellat tempore ullam voluptate!
-                </p>
-                <p class="messageTime">22:47</p>
-            </div>
-        </div>
-        <div class="message">
-            <div class="rightMessage">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ab aliquid eaque esse expedita harum mollitia quam quod! Consequatur dolores fugit,
-                    itaque minima odio pariatur, perferendis rem sapiente, sunt totam voluptas.
-                </p>
-                <p class="messageTime">22:47</p>
-            </div>
-        </div>
+        <!--<div class="message">-->
+            <!--<div class="leftMessage">-->
+                <!--<p>-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantiu-->
+                    <!--m adipisci dolore, dolores enim error impedit in, iusto magni mollitia odio officiis omnis par-->
+                    <!--iatur porro quo repellat tempore ullam voluptate!-->
+                <!--</p>-->
+                <!--<p class="messageTime">22:47</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="message">-->
+            <!--<div class="rightMessage">-->
+                <!--<p>-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+                    <!--Ab aliquid eaque esse expedita harum mollitia quam quod! Consequatur dolores fugit,-->
+                    <!--itaque minima odio pariatur, perferendis rem sapiente, sunt totam voluptas.-->
+                <!--</p>-->
+                <!--<p class="messageTime">22:47</p>-->
+            <!--</div>-->
+        <!--</div>-->
 
-        <div id="inputForm" class="message">
-            <form class="inputForm" action="">
-                <!--<label for="inputField"></label>-->
-                <input id="inputField" type="text">
-                <input id="sendBtn" type="submit" value="Send">
-            </form>
+        <div id="messages">
+            <div id="inputForm" class="message">
+                <form class="inputForm" action="">
+                    <!--<label for="inputField"></label>-->
+                    <input id="inputField" type="text">
+                    <input id="sendBtn" type="submit" value="Send">
+                </form>
+            </div>
         </div>
 
     </main>
+
     <footer></footer>
 </body>
 </html>

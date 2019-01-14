@@ -45,16 +45,21 @@ header > div{
     color: black;
 }
 
+.hideMenu > li:hover{
+    background-color: yellow;
+}
+
 .activeMenu{
     margin: 0;
-    padding: 0 2vw;
+    padding: 0;
     display: block;
-    position: absolute;
+    position: fixed;
+    margin-left: 10vw;
     left: 0;
     top: 0;
     background-color: white;
     z-index: 5;
-    max-width: 15vw;
+    width: 25vw;
     border-radius: 1vh;
 }
 
@@ -132,6 +137,10 @@ header > div > img{
     display: grid;
     position: relative;
     grid-template-columns: 1fr 4fr 1fr;
+}
+
+.row:hover{
+    cursor: pointer;
 }
 
 
@@ -249,4 +258,8 @@ p{
 #sendBtn{
     align-self: flex-end;
     width: 25%;
+}
+
+#messages{
+    display: none;
 }

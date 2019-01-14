@@ -5,11 +5,10 @@ let textValue = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n" +
 
 const classArray = ["leftMessage", "rightMessage"];
 
-window.onload = init;
+function appendChilds() {
+    document.getElementById("themes").innerHTML = "";
 
-function init() {
-
-    let container = document.getElementById("mainContainer");
+    let container = document.getElementById("messages");
     for (let i = 0; i < countOfMsges; i++){
         let timeInMs = new Date(Date.now());
         let timeValue = `${timeInMs.getHours()}:${timeInMs.getMinutes() + i}`;
@@ -27,6 +26,7 @@ function init() {
         container.appendChild(messageDiv);
     }
 
+    container.style.setProperty("display", "block");
 }
 
 function createDiv(className, innerHTML) {

@@ -5,7 +5,7 @@ window.onload = init;
 
 function init() {
     for (let i = 0; i < 10; i++){
-        document.getElementById("mainContainer").appendChild(createMessage());
+        document.getElementById("themes").appendChild(createMessage());
     }
 }
 
@@ -32,6 +32,8 @@ function createMessage() {
     row.appendChild(avatarHref);
     row.appendChild(itemMsg);
     row.appendChild(time);
+
+    row.addEventListener("click", appendChilds);
 
     return row;
 }
