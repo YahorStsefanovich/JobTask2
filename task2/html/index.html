@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="../css/main.css">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-    <script src="../js/main.js"></script>
+    <!--<script src="../js/main.js"></script>-->
     <script src="../js/menu.js"></script>
+    <script src="../js/createMessages.js"></script>
 
 
 </head>
 <body>
     <header>
         <div class="navicon">
-            <img src="../resources/images/menu-512.png" alt="navicon">
 
             <ul class="hideMenu">
                 <li><a href="#">Close</a></li>
@@ -23,6 +23,9 @@
                 <li><a href="#">Help</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+
+            <img src="../resources/images/menu-512.png" alt="navicon">
+
         </div>
         <div class="title">Telegram</div>
         <div class="search">
@@ -36,14 +39,44 @@
 
     </header>
     <main class="container" id="mainContainer">
-        <div class="row">
-            <a class="msgHref" href=""><img class="avatar" src="../resources/images/Ava.jpg" alt=""></a>
-            <div class="itemMsg">
-                <div class="nameOfMsg"><a class="msgHref" href="">Theme</a></div>
-                <div class="descriptionOfMsg"><a class="msgHref" href="">message</a></div>
+        <!--<div class="row">-->
+            <!--<a class="msgHref" href=""><img class="avatar" src="../resources/images/Ava.jpg" alt=""></a>-->
+            <!--<div class="itemMsg">-->
+                <!--<div class="nameOfMsg"><a class="msgHref" href="">Theme</a></div>-->
+                <!--<div class="descriptionOfMsg"><a class="msgHref" href="">message</a></div>-->
+            <!--</div>-->
+            <!--<div class="time">15:47 PM</div>-->
+        <!--</div>-->
+
+        <div class="message">
+            <div class="leftMessage">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantiu
+                    m adipisci dolore, dolores enim error impedit in, iusto magni mollitia odio officiis omnis par
+                    iatur porro quo repellat tempore ullam voluptate!
+                </p>
+                <p class="messageTime">22:47</p>
             </div>
-            <div class="time">15:47 PM</div>
         </div>
+        <div class="message">
+            <div class="rightMessage">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ab aliquid eaque esse expedita harum mollitia quam quod! Consequatur dolores fugit,
+                    itaque minima odio pariatur, perferendis rem sapiente, sunt totam voluptas.
+                </p>
+                <p class="messageTime">22:47</p>
+            </div>
+        </div>
+
+        <div id="inputForm" class="message">
+            <form class="inputForm" action="">
+                <!--<label for="inputField"></label>-->
+                <input id="inputField" type="text">
+                <input id="sendBtn" type="submit" value="Send">
+            </form>
+        </div>
+
     </main>
     <footer></footer>
 </body>

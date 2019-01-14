@@ -1,5 +1,4 @@
 body{
-    margin: 0;
     width: 100%;
     min-height: 100vh;
 }
@@ -7,11 +6,12 @@ body{
 
 /*header block*/
 header{
+    margin: 0 10vw!important;
     z-index: 10;
     top: 0;
     left: 0;
     position: fixed;
-    min-height: 15%;
+    height: 80px;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -109,18 +109,19 @@ header > div > img{
 
 /*main block*/
 .container{
+    margin: 0 10vw!important;
     position: absolute;
-    top: 15%;
+    top: 80px;
     left: 0;
-    width: 100%;
+    width: auto;
 }
 
 .avatar{
     grid-row: 1;
     grid-column: 1;
     border-radius: 50%;
-    width: 90%;
-    margin: 5%;
+    width: 70%;
+    padding: 15%;
     align-self: center;
     justify-self: center;
 }
@@ -174,4 +175,78 @@ header > div > img{
 
 .msgHref:hover{
     text-decoration: underline;
+}
+
+.message{
+    /*display: none;*/
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.message:hover{
+    cursor: pointer;
+}
+
+.leftMessage, .rightMessage{
+    border-radius: 1vw;
+    padding: 0.5vw;
+    margin: 0.5vw;
+}
+
+
+.leftMessage{
+    background-color: antiquewhite;
+    width: 70%;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.rightMessage{
+    background-color: darksalmon;
+    width: 40%;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+p{
+    margin: 0;
+}
+
+.messageTime{
+    text-align: end;
+    font-size: smaller;
+    font-style: italic;
+    opacity: 0.3;
+}
+
+.messageTime:hover{
+    opacity: 1;
+}
+
+.inputForm{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    top: 100%;
+    margin: 1vh;
+}
+
+#inputField, #sendBtn{
+    box-sizing: border-box;
+    height: 40px;
+    justify-self: center;
+}
+
+#inputField{
+    align-self: flex-start;
+    width: 65%;
+}
+
+#sendBtn{
+    align-self: flex-end;
+    width: 25%;
 }
