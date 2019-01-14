@@ -11,7 +11,7 @@ header{
     top: 0;
     left: 0;
     position: fixed;
-    height: 15%;
+    min-height: 15%;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -30,6 +30,60 @@ header > div{
 .navicon{
     grid-row: 1;
     grid-column: 1;
+    position: relative;
+}
+
+.hideMenu, .hideSearch{
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.hideMenu > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+.activeMenu{
+    margin: 0;
+    padding: 0 2vw;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: 5;
+    max-width: 15vw;
+    border-radius: 1vh;
+}
+
+.activeSearch{
+    margin: 0;
+    padding: 0 2vw;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    z-index: 5;
+    max-width: 25vw;
+    border-radius: 1vh;
+    height: 100%;
+}
+
+input[type=text]{
+    font-size: 14pt;
+    border-radius: 1vh;
+}
+
+input[type=submit]{
+    background-color: darkslategray;
+    font-size: 14pt;
+    border: none;
+    color: white;
+    width: 50%;
+    border-radius: 1vh;
 }
 
 .title{
@@ -40,6 +94,12 @@ header > div{
 .search{
     grid-row: 1;
     grid-column: 6;
+    position: relative;
+
+}
+
+header > div{
+    position: relative;
 }
 
 header > div > img{
@@ -59,7 +119,8 @@ header > div > img{
     grid-row: 1;
     grid-column: 1;
     border-radius: 50%;
-    height: 90%;
+    width: 90%;
+    margin: 5%;
     align-self: center;
     justify-self: center;
 }
@@ -71,6 +132,7 @@ header > div > img{
     position: relative;
     grid-template-columns: 1fr 4fr 1fr;
 }
+
 
 .itemMsg{
     grid-row: 1;

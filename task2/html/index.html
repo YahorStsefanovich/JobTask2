@@ -4,13 +4,36 @@
     <meta charset="UTF-8">
     <title>Telegram</title>
     <link rel="stylesheet" href="../css/main.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
     <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+
+
 </head>
 <body>
     <header>
-        <div class="navicon"><img src="../resources/images/menu-512.png" alt="navicon"></div>
+        <div class="navicon">
+            <img src="../resources/images/menu-512.png" alt="navicon">
+
+            <ul class="hideMenu">
+                <li><a href="#">Close</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
         <div class="title">Telegram</div>
-        <div class="search"><img src="../resources/images/search.png" alt="search"></div>
+        <div class="search">
+            <img src="../resources/images/search.png" alt="search">
+            <form class="hideSearch" action="">
+                <input type="text" placeholder="Input text">
+                <input type="submit" value="Find">
+            </form>
+        </div>
+
+
     </header>
     <main class="container" id="mainContainer">
         <!--<div class="row">-->
